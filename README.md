@@ -73,12 +73,3 @@ NODE_ENV=production
 - `GET /api/tasks/my`
 - `GET /api/dashboard`
 
-## Suggested Demo Video Flow
-
-1. Sign up as an admin.
-2. Create a project.
-3. Sign up as a member in another browser/incognito session.
-4. Add the member to the project.
-5. Create and assign tasks with due dates and priorities.
-6. Update task statuses as the member.
-7. Show dashboard totals and overdue/status tracking.
