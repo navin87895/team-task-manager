@@ -39,6 +39,22 @@ JWT_SECRET=replace-with-a-long-random-secret
 PORT=3000
 ```
 
+## Railway Deployment
+
+1. Push this project to GitHub.
+2. Create a new Railway project from the GitHub repository.
+3. Add a PostgreSQL database service in Railway.
+4. Add these variables to the app service:
+
+```bash
+DATABASE_URL=${{Postgres.DATABASE_URL}}
+JWT_SECRET=replace-with-a-long-random-secret
+NODE_ENV=production
+```
+
+5. Deploy the app. Railway will run `npm install` and `npm start`.
+6. Open the Railway public URL and test signup, login, project creation, member assignment, task updates, and dashboard stats.
+
 ## API Overview
 
 - `POST /api/auth/signup`
